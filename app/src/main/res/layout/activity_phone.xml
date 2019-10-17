@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/logoContainer"
+        android:layout_marginBottom="80dp">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="85dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="cursive"
+            android:text="Put your Logo!"
+            android:textColor="@color/blueLogo"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logoContainer"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="May I ask your phone number?"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/blueLogo" />
+
+        <RelativeLayout
+            android:id="@+id/editTextMobileContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/editTextMobileCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_grey"
+                android:drawablePadding="6dp"
+                android:hint="Country code"
+                android:layout_marginLeft="2dp"
+                android:inputType="phone"
+                android:maxLength="4" />
+
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:layout_toRightOf="@id/editTextMobileCode"
+                android:hint="Mobile number"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextMobileContainer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_continue_button"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#cdd8f1" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
