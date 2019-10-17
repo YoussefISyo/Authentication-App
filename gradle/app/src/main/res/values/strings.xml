@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FirebaseAuth</string>
+    <string name="facebook_application_id">476688369557945</string>
+    <string name="fb_login_protocol_scheme">fb476688369557945</string>
+
+    <string name="web_client_id">1043025682789-uos8479ev3agr0t8d578t10b0q38m5m6.apps.googleusercontent.com</string>
+
+</resources>
