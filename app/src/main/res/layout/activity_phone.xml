@@ -6,26 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:id="@+id/logoContainer"
-        android:layout_marginBottom="80dp">
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/logo"
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="85dp"
-            android:layout_marginBottom="80dp"
-            android:fontFamily="cursive"
-            android:text="Put your Logo!"
-            android:textColor="@color/blueLogo"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/logo" />
 
-    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-95dp"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/brackets" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GDG Constantine"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="3dp"
+                android:textSize="18sp"
+                android:textColor="@color/bluefacebook"
+                android:fontFamily="monospace"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 
