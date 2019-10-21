@@ -6,6 +6,9 @@ an Android application to learn how to authenticate with different methods using
 3. Google Sign-in
 4. Facebook Login
 
+#### The main interface of the app :
 
+
+<img src="https://i.imgur.com/lXIZzQ1.jpg" width="350" title="UI Design">
 
 
